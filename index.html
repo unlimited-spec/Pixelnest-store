@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PixelNest — useful digital downloads for creators and beginners." />
+  <title>PixelNest | Digital Goods for Creative Minds</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">✦</span> PixelNest</a>
+    <nav><a href="#products">Shop</a><a href="#about">About</a></nav>
+    <button class="cart-button" id="cartButton">Cart <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">DIGITAL GOODS • INSTANT ACCESS</div>
+      <h1>Make something<br><span>brilliant.</span></h1>
+      <p>Handy digital resources for creators, students, and people building their next big idea.</p>
+      <a class="primary-button" href="#products">Explore the collection <span>↗</span></a>
+      <div class="hero-note"><span class="dot"></span> Digital downloads • No physical shipping</div>
+    </section>
+
+    <section class="shop-section" id="products">
+      <div class="section-heading">
+        <div><div class="eyebrow">THE STARTER COLLECTION</div><h2>Small tools. Big ideas.</h2></div>
+        <span class="count-label">3 items</span>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-art art-one"><span class="art-label">WEB KIT</span><div class="browser"><i></i><i></i><i></i><div class="browser-lines"></div></div></div>
+          <div class="product-info"><div class="product-type">FOR BEGINNER BUILDERS</div><h3>HTML & CSS Starter Kit</h3><p>A beginner-friendly template pack for practicing clean web layouts.</p><div class="product-bottom"><strong>₦2,000</strong><button class="add-button" data-product="web">Add to cart +</button></div></div>
+        </article>
+        <article class="product-card">
+          <div class="product-art art-two"><span class="art-label">CREATOR PACK</span><div class="poster">CREATE<br><span>MORE.</span><small>Social templates</small></div></div>
+          <div class="product-info"><div class="product-type">FOR CONTENT CREATORS</div><h3>Social Media Template Pack</h3><p>Editable post ideas and layouts for a consistent creative feed.</p><div class="product-bottom"><strong>₦1,500</strong><button class="add-button" data-product="social">Add to cart +</button></div></div>
+        </article>
+        <article class="product-card">
+          <div class="product-art art-three"><span class="art-label">WALLPAPER SET</span><div class="wallpaper-shape">✦</div><div class="wallpaper-caption">FOCUS<br>ON YOUR<br><b>VISION.</b></div></div>
+          <div class="product-info"><div class="product-type">FOR YOUR SCREEN</div><h3>Neon Focus Wallpapers</h3><p>A pack of bold digital wallpapers for phone and desktop screens.</p><div class="product-bottom"><strong>₦800</strong><button class="add-button" data-product="wallpaper">Add to cart +</button></div></div>
+        </article>
+      </div>
+      <p class="demo-note">Preview store: these are sample listings. Replace them with original products you create before accepting orders.</p>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-mark">✦</div><div><div class="eyebrow">WHY PIXELNEST?</div><h2>Ideas deserve<br>a good starting point.</h2><p>We’re building a small library of practical, affordable digital resources to help you learn, create, and get moving.</p></div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">✦</span> PixelNest</a><span>Made for curious minds.</span><span>© <span id="year"></span> PixelNest</span></footer>
+
+  <div class="cart-panel" id="cartPanel" aria-live="polite">
+    <button class="close-cart" id="closeCart" aria-label="Close cart">×</button>
+    <h2>Your cart</h2><div id="cartItems"><p>Your cart is empty.</p></div>
+    <div class="cart-total"><span>Total</span><strong id="cartTotal">₦0</strong></div>
+    <button class="primary-button checkout-button" id="checkoutButton">Continue to checkout</button>
+    <p class="checkout-note">Checkout is not connected yet. No payment will be taken.</p>
+  </div>
+  <div class="overlay" id="overlay"></div>
+  <script src="script.js"></script>
+</body>
+</html>
